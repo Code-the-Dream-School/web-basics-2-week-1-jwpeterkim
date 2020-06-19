@@ -54,7 +54,7 @@ console.log(`${firstName} ${lastName}`);
 const price = 9.99;
 const quantity = 10;
 const total = price * quantity;
-console.log(Math.round(total));
+console.log(total.toFixed(2));
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
