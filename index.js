@@ -20,7 +20,8 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+const firstChallenge = 'first';
+console.log(firstChallenge);
 /* Challenge #2
  * Create variables for your first and last name then print your full name
  *
@@ -33,6 +34,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+const firstName = 'Peter';
+const lastName = 'Kim';
+console.log(`${firstName} ${lastName}`);
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -47,6 +51,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+const price = 9.99;
+const quantity = 10;
+const total = price * quantity;
+console.log(total.toFixed(2));
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -63,6 +71,14 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+const weather = 'Rainy';
+let message
+if(weather === 'Sunny'){
+    message = "Yay! It's sunny outside";
+} else {
+    message = "Aww! It's not sunny outside";
+}
+console.log(message);
 
 /* Challenge #5
  * Create a function that returns any string
@@ -76,6 +92,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function myFunction(){
+    return 'I called a function!'
+}
+console.log(myFunction());
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -89,6 +109,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+const myArrowFunction = () => {
+    return 'I called an arrow function.'
+}
+console.log(myArrowFunction());
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -103,6 +127,10 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function stringToUpper (str){
+    return str.toUpperCase();
+}
+console.log(stringToUpper('Why am I Screaming'));
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -120,3 +148,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function multiplyByTwo(number){
+    return number * 2
+}
+const num1 = multiplyByTwo(1);
+const num2 = multiplyByTwo(5);
+const num3 = multiplyByTwo(10);
+
+console.log(num1, num2, num3);
